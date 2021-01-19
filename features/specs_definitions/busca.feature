@@ -14,17 +14,14 @@ Funcionalidade: Realizar compra na shoestock
      Quando preencher o campo de busca
      Entao visualizo os resultados 'RESULTADOS DE BUSCA PARA "CARTEIRA"'
 
-    @busca1
+    @busca
      Cenario: Adicionando a sacola
-     Dado que eu esteja com o resultado da busca na tela
-     Quando eu clicar no intem que desjo
-     Entao clico em "Comprar"
+     Dado que eu esteja na home do site
+     Quando preencher o campo de busca
+     E eu clicar no intem que desejo
+     E clico em "Comprar"
+     Entao visualizo os detalhes da compra 'Carteira Couro Shoestock Recorte Masculina'
 
-    @busca1
-     Cenario: Validar sacola
-     Dado que eu esteja na home da shoestock
-     Quando eu clicar em Sacola
-     Entao visualizo a minha sacola de produto
 
 
 

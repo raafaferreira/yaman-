@@ -2,10 +2,10 @@ class BuscaPage < SitePrism::Page
 
 
     # Elementos mapeados
-    element :busca, "[id='search-input']"
+    element :busca, "#search-input"
     element :pesquisa, "button[title='Buscar']"
-
-
+    element :produto, :xpath, "//*[@id='item-list']/div[1]/div[1]/div[1]/a/img"
+    element :comprar, "#buy-button-now"
 
     # element :validacao, ".tcnews icon-tcnews"
     # Metodos com as acoes
@@ -22,7 +22,12 @@ class BuscaPage < SitePrism::Page
         pesquisa.click
     end
 
+    def clickproduto
+        produto.click
+    end
     
-  
+    def clickcomprar
+        comprar.click        
+    end
 
 end
